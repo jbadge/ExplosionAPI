@@ -11,10 +11,10 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class MumblingController : ControllerBase
     {
-        [HttpGet("{s}")]
+        // Using Query
+        [HttpGet]
         public string Mumbling(string s)
         {
-
             return string.Join("-", s.Select((x, i) => char.ToUpper(x) + new String(char.ToLower(x), i)));
         }
     }

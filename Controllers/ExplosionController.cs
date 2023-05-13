@@ -11,10 +11,10 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class ExplosionController : ControllerBase
     {
+        // Using URL
         [HttpGet("{s}")]
         public string Explosion(string s)
         {
-
             return string.Join("", s.Select(x => new String(x, int.Parse(x.ToString()))));
         }
     }
