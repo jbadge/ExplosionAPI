@@ -11,11 +11,11 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class ReverseStringController : ControllerBase
     {
-        [HttpGet]
-        public string ReverseString(string str)
+        [HttpGet("{s}")]
+        public string ReverseString(string s)
         {
 
-            return new String(str.ToArray().Reverse().ToArray());
+            return new String(s.ToArray().Reverse().ToArray());
         }
     }
 }

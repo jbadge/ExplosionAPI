@@ -11,7 +11,7 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class ExplosionController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("{s}")]
         public string Explosion(string s)
         {
 
